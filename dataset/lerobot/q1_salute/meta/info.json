@@ -1,0 +1,172 @@
+{
+    "codebase_version": "v3.0",
+    "fps": 60,
+    "features": {
+        "observation.state": {
+            "dtype": "float32",
+            "shape": [
+                22
+            ],
+            "names": [
+                "left_hip_pitch_joint",
+                "left_hip_roll_joint",
+                "left_hip_yaw_joint",
+                "left_knee_joint",
+                "left_ankle_pitch_joint",
+                "left_ankle_roll_joint",
+                "right_hip_pitch_joint",
+                "right_hip_roll_joint",
+                "right_hip_yaw_joint",
+                "right_knee_joint",
+                "right_ankle_pitch_joint",
+                "right_ankle_roll_joint",
+                "waist_roll_joint",
+                "waist_yaw_joint",
+                "left_shoulder_pitch_joint",
+                "left_shoulder_roll_joint",
+                "left_shoulder_yaw_joint",
+                "left_elbow_joint",
+                "right_shoulder_pitch_joint",
+                "right_shoulder_roll_joint",
+                "right_shoulder_yaw_joint",
+                "right_elbow_joint"
+            ]
+        },
+        "observation.velocity": {
+            "dtype": "float32",
+            "shape": [
+                22
+            ],
+            "names": [
+                "left_hip_pitch_joint",
+                "left_hip_roll_joint",
+                "left_hip_yaw_joint",
+                "left_knee_joint",
+                "left_ankle_pitch_joint",
+                "left_ankle_roll_joint",
+                "right_hip_pitch_joint",
+                "right_hip_roll_joint",
+                "right_hip_yaw_joint",
+                "right_knee_joint",
+                "right_ankle_pitch_joint",
+                "right_ankle_roll_joint",
+                "waist_roll_joint",
+                "waist_yaw_joint",
+                "left_shoulder_pitch_joint",
+                "left_shoulder_roll_joint",
+                "left_shoulder_yaw_joint",
+                "left_elbow_joint",
+                "right_shoulder_pitch_joint",
+                "right_shoulder_roll_joint",
+                "right_shoulder_yaw_joint",
+                "right_elbow_joint"
+            ]
+        },
+        "action": {
+            "dtype": "float32",
+            "shape": [
+                22
+            ],
+            "names": [
+                "left_hip_pitch_joint",
+                "left_hip_roll_joint",
+                "left_hip_yaw_joint",
+                "left_knee_joint",
+                "left_ankle_pitch_joint",
+                "left_ankle_roll_joint",
+                "right_hip_pitch_joint",
+                "right_hip_roll_joint",
+                "right_hip_yaw_joint",
+                "right_knee_joint",
+                "right_ankle_pitch_joint",
+                "right_ankle_roll_joint",
+                "waist_roll_joint",
+                "waist_yaw_joint",
+                "left_shoulder_pitch_joint",
+                "left_shoulder_roll_joint",
+                "left_shoulder_yaw_joint",
+                "left_elbow_joint",
+                "right_shoulder_pitch_joint",
+                "right_shoulder_roll_joint",
+                "right_shoulder_yaw_joint",
+                "right_elbow_joint"
+            ]
+        },
+        "observation.images.sim": {
+            "dtype": "video",
+            "shape": [
+                3,
+                600,
+                800
+            ],
+            "names": [
+                "channels",
+                "height",
+                "width"
+            ],
+            "info": {
+                "video.height": 600,
+                "video.width": 800,
+                "video.codec": "av1",
+                "video.pix_fmt": "yuv420p",
+                "video.fps": 60,
+                "video.channels": 3,
+                "has_audio": false,
+                "video.g": 2,
+                "video.crf": 30,
+                "video.preset": 12,
+                "video.fast_decode": 0,
+                "video.video_backend": "pyav",
+                "video.extra_options": {},
+                "is_depth_map": false
+            }
+        },
+        "timestamp": {
+            "dtype": "float32",
+            "shape": [
+                1
+            ],
+            "names": null
+        },
+        "frame_index": {
+            "dtype": "int64",
+            "shape": [
+                1
+            ],
+            "names": null
+        },
+        "episode_index": {
+            "dtype": "int64",
+            "shape": [
+                1
+            ],
+            "names": null
+        },
+        "index": {
+            "dtype": "int64",
+            "shape": [
+                1
+            ],
+            "names": null
+        },
+        "task_index": {
+            "dtype": "int64",
+            "shape": [
+                1
+            ],
+            "names": null
+        }
+    },
+    "total_episodes": 1,
+    "total_frames": 192,
+    "total_tasks": 1,
+    "chunks_size": 1000,
+    "data_files_size_in_mb": 100,
+    "video_files_size_in_mb": 200,
+    "data_path": "data/chunk-{chunk_index:03d}/file-{file_index:03d}.parquet",
+    "video_path": "videos/{video_key}/chunk-{chunk_index:03d}/file-{file_index:03d}.mp4",
+    "robot_type": "primebot_q1",
+    "splits": {
+        "train": "0:1"
+    }
+}
